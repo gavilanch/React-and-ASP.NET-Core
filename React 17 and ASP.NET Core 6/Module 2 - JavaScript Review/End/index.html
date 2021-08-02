@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <body>
+    <span>Hello world</span>
+
+    <script>
+      const obj = {
+        traditionalFunction: function () {
+          console.log("traditional function", this);
+        },
+        arrowFunction: () => {
+          console.log("arrow function", this);
+        },
+        lastName: "Gavilán",
+      };
+
+      console.log("this environment", this);
+      obj.arrowFunction();
+      obj.traditionalFunction();
+    </script>
+  </body>
+</html>

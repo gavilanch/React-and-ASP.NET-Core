@@ -1,0 +1,20 @@
+.div {
+    margin-right: 2%;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.div p {
+    height: 44px;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.div img {
+    width: 225px;
+    height: 300px;
+}
+
+.div a {
+    text-decoration: none;
+}
