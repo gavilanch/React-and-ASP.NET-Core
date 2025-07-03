@@ -1,0 +1,6 @@
+@MoviesAPI_HostAddress = http://localhost:5026
+
+GET {{MoviesAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
