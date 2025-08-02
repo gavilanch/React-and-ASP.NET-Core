@@ -78,6 +78,7 @@ builder.Services.AddHttpContextAccessor();
 builder.Services.AddOutputCache(options =>
 {
     options.DefaultExpirationTimeSpan = TimeSpan.FromSeconds(60);
+    options.AddPolicy(nameof(WithAuthorizeCachePolicy), WithAuthorizeCachePolicy.Instance);
 });
 
 builder.Services.AddTransient<IFileStorage, AzureFileStorage>();
